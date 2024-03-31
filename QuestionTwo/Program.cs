@@ -23,7 +23,9 @@ namespace QuestionTwo
             double first_number=0, second_number=0, addition=0, subtraction=0, multiplaction=0, division = 0;
             
             //Get the two number form our console 
+            Console.WriteLine("Enter First Number:->");
             first_number = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Second Number:->");
             second_number= Convert.ToDouble(Console.ReadLine());
 
 
@@ -35,9 +37,9 @@ namespace QuestionTwo
             addition = first_number + second_number;
             subtraction = first_number - second_number;
             multiplaction = first_number * second_number;
-            division = first_number / second_number;
+            division = Math.Round(first_number / second_number,2);
 
-            Console.WriteLine(string.Format("First Number: {0} \n Second Number: {1} \n Addition: {2} \n Subtraction: {3} \n Multiplication: {4} Division: {5}", first_number, second_number, addition, subtraction, multiplaction, division));
+            Console.WriteLine(string.Format("*****************************\n* First Number: {0}          *\n* Second Number: {1}         *\n* Addition: {2}              *\n* Subtraction: {3}            *\n* Multiplication: {4}       *\n* Division: {5}            *\n*****************************", first_number, second_number, addition, subtraction, multiplaction, division));
             Console.ReadKey();
 
 
